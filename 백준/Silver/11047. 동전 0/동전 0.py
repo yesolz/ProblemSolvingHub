@@ -4,9 +4,8 @@ lst = sorted(lst, reverse=True)
 
 total = 0
 for i in range(n):
-    if lst[i] <= k:
-        x = k // lst[i]
-        total += x
-        k -= lst[i] * x
+    x = k // lst[i]
+    total += x
+    k -= lst[i] * x
 
 print(total)
