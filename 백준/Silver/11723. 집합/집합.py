@@ -1,6 +1,5 @@
 import sys
 input = sys.stdin.readline
-
 M = int(input().strip())
 s = set()
 
@@ -21,6 +20,6 @@ for _ in range(M):
                 s.add(x)
     else:
         if command[0] == "all":
-            s = set(range(1, 21))
+            s.update(range(1, 21))
         elif command[0] == "empty":
             s.clear()
